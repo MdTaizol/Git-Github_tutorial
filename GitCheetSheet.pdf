@@ -1,0 +1,295 @@
+# 📘 Git & GitHub Cheat Sheet
+
+A beginner-friendly, complete reference for using **Git** and **GitHub** in daily development.
+
+---
+
+## 🔹 What is Git?
+
+Git is a **version control system** that helps track changes in code and collaborate safely.
+
+## 🔹 What is GitHub?
+
+GitHub is an **online platform** for hosting and sharing Git repositories.
+
+---
+
+## 📦 Basic Setup (One Time)
+
+```bash
+git --version
+```
+
+Check Git installation
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "youremail@example.com"
+```
+
+Set user identity
+
+```bash
+git config --list
+```
+
+View configuration
+
+---
+
+## 📁 Start a Project
+
+```bash
+git init
+```
+
+Initialize a repository
+
+```bash
+git clone https://github.com/username/repo-name.git
+```
+
+Clone a GitHub repository
+
+---
+
+## 📄 Check Status & History
+
+```bash
+git status
+```
+
+Check file status
+
+```bash
+git log
+```
+
+View commit history
+
+```bash
+git log --oneline
+```
+
+Short history view
+
+---
+
+## ➕ Add & Commit Changes
+
+```bash
+git add file.py
+```
+
+Add a specific file
+
+```bash
+git add .
+```
+
+Add all files
+
+```bash
+git commit -m "commit message"
+```
+
+Save changes
+
+---
+
+## 🔁 Branching
+
+```bash
+git branch
+```
+
+List branches
+
+```bash
+git branch branch-name
+```
+
+Create a branch
+
+```bash
+git checkout branch-name
+```
+
+Switch branch
+
+```bash
+git checkout -b new-branch
+```
+
+Create and switch
+
+---
+
+## 🔀 Merge Branches
+
+```bash
+git merge branch-name
+```
+
+Merge branch into current branch
+
+---
+
+## ☁️ GitHub (Remote)
+
+```bash
+git remote -v
+```
+
+Check remote URL
+
+```bash
+git remote add origin https://github.com/username/repo.git
+```
+
+Add remote repository
+
+```bash
+git push origin main
+```
+
+Push code to GitHub
+
+```bash
+git pull origin main
+```
+
+Pull latest changes
+
+---
+
+## 🔄 Update & Fix
+
+```bash
+git diff
+```
+
+View changes
+
+```bash
+git reset file.py
+```
+
+Unstage a file
+
+```bash
+git reset --hard
+```
+
+⚠️ Remove all uncommitted changes
+
+---
+
+## 🗑️ Delete Files
+
+```bash
+git rm file.py
+```
+
+Delete file
+
+```bash
+git rm --cached file.py
+```
+
+Remove from Git only
+
+---
+
+## 🏷️ Tags
+
+```bash
+git tag
+```
+
+List tags
+
+```bash
+git tag v1.0
+```
+
+Create tag
+
+```bash
+git push origin v1.0
+```
+
+Push tag
+
+---
+
+## 🧑‍🤝‍🧑 Collaboration
+
+```bash
+git fetch
+```
+
+Fetch updates
+
+```bash
+git pull
+```
+
+Fetch and merge
+
+```bash
+git push
+```
+
+Push commits
+
+---
+
+## 🚫 .gitignore
+
+Create a `.gitignore` file to ignore unnecessary files.
+
+Example:
+
+```
+node_modules/
+.env
+__pycache__/
+*.log
+```
+
+---
+
+## ⭐ Common Commit Message Style
+
+```
+feat: add python basics chapter
+fix: correct login bug
+docs: update README
+refactor: clean code
+```
+
+---
+
+## 🧠 Simple Workflow
+
+```
+git status
+git add .
+git commit -m "message"
+git push
+```
+
+---
+
+## 🏁 Final Tips
+
+* Commit often
+* Write clear messages
+* Pull before push
+* Use branches
+* Don’t panic 😄
+
+---
+
+⭐ If this helps you, don’t forget to **star the repository**!
